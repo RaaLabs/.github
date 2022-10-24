@@ -1,0 +1,25 @@
+version: 1
+merge:
+  trigger:
+    labels: ["auto-merge"]
+    comments: ["Please merge this pull request!"]
+    auto_merge: true
+  ignore:
+    labels: ["do-not-merge"]
+    comment_substrings: ["==DO_NOT_MERGE=="]
+  method: squash
+  merge_method:
+    - method: squash
+  options:
+    squash:
+      title: "pull_request_title"
+      body: "empty_body"
+      message_delimiter: ==COMMIT_MSG==
+  delete_after_merge: true
+  allow_merge_with_no_checks: false
+update:
+  trigger:
+    labels: ["auto-update"]
+  ignore:
+    labels: ["do-not-update"]
+  ignore_drafts: true
