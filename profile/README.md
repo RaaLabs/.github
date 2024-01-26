@@ -1,5 +1,5 @@
 
-![image info](profile/profile.png)
+![image info](profile/raalabs_spartan.jpeg)
 
 Welcome to **[Raa Labs](https://www.raalabs.com/)**, we unlock value by digitalizing your vessels.
 
